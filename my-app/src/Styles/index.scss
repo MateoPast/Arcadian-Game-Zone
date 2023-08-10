@@ -1,0 +1,39 @@
+@use 'reset';
+@use 'vars';
+@font-face {
+  font-family: 'Squartiqa';
+  src: local('Squartiqa'),
+  url("../assets/fonts/Squartiqa4F.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Harry P';
+  src: local('Harry P'),
+  url("../assets/fonts/HARRYP__.TTF") format("truetype");
+}
+@font-face {
+  font-family: 'BackToTheFutur';
+  src: local('BackToTheFutur'),
+  url("../assets/fonts/BTTF.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Arcade';
+  src: local('Arcade'),
+  url("../assets/fonts/ARCADE_N.TTF") format("truetype");
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: vars.$background-color;
+  font-size: 1.6rem;
+  position: relative;
+  //padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+#root{
+  height: 100%;
+}

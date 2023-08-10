@@ -1,0 +1,52 @@
+@use './src/Styles/vars';
+
+.modalScore {
+    font-family: 'Roboto';
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+    color: vars.$light-orange;
+}
+
+.modalScore-content {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: center;
+    background-color: vars.$blue;
+    margin: 15% auto; 
+    padding: 1.5rem;
+    border: 0.125em solid vars.$light-orange;
+    width: 30%; 
+    height: 50%;
+}
+
+.column_title {
+  padding: 1rem;
+}
+
+.column_content {
+  text-align: center;
+}
+
+.modal-title {
+      font-size: 3rem;
+      padding: 2rem;
+    }
+  
+
+
+.openScoreModal {
+  display: block!important;
+}
+
+@media only screen and (max-width: 480px) { 
+    .modalScore-content{
+        width: 100%;
+    }
+    }

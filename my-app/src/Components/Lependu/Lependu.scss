@@ -1,0 +1,435 @@
+
+.Hangman{
+   
+    color: black;
+    text-align: center;
+   
+    width: 100%;
+margin-top: 2rem;
+background-image: url(../../assets/images/Pendu/BackgroundLependu.png);
+background-size: cover;
+background-position: bottom center;
+//background-repeat: no-repeat;
+font-family: ''
+}
+
+.headGame{
+    height: 25vh;
+
+    justify-content: center;
+    display: flex;
+
+
+}
+.showTimerHang{
+ 
+    justify-content: center;   
+    flex-direction: wrap;
+
+ position: absolute;
+}
+.imageTimer{
+ position:absolute;
+    height: 7vh;
+    margin-top: 40rem;
+margin-left: 15rem;
+    position: absolute;
+ 
+top:0;
+padding-bottom :1rem;
+margin-right: 0rem;
+z-index: 10;
+}
+
+.imageCoeur{
+  
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 12rem;
+    height: 5vh;
+  
+}
+.numbers-timer{
+
+//position: absolute;
+//margin-top: 4rem;
+//margin-left: 85rem;
+
+font-family: 'Creepster', cursive;
+}
+   
+   .couthang {
+    margin: 1rem;
+   }
+
+.counterLives{
+   
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.imagePendu{
+    height: 15vh;
+    margin: 2rem;
+        justify-content: center;
+        display: flex;
+        margin-top: 0;
+}
+.lives-time_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .incorrect{
+        font-family: 'Creepster', cursive;
+        margin: 1rem;
+    //margin-right: 40rem;
+        margin-bottom: 1rem;
+        color: white;
+    
+    }
+}
+.incorrectHang{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+font-family: 'roboto';
+}
+.Hangman h1{
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'squartiqa';
+    margin-top: 2rem;
+
+
+    
+}
+.answerZombie{
+    margin-bottom:1rem;
+    font-family: 'roboto';
+    margin-top: 1rem;
+    color: white;
+   
+    };
+
+
+.resetScore{
+    border: none;
+    font-family: 'Creepster', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60px;
+    margin: 5px 2px 2px 10px;
+    letter-spacing: 1px;
+    outline: none;
+ background-color: white;
+ 
+
+ 
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    margin-top: 0;
+padding: 1rem;
+
+text-transform: uppercase;
+padding: 1rem;
+
+justify-content: center;
+border-radius:100px ;
+
+
+color: #262626;
+
+border: 2px solid#262626;
+
+transition: all 0.5s;
+}   
+  
+    .resetScore:hover{
+       
+letter-spacing: 2Px;
+background-color: #6BA89D;
+font-size: 1.2rem;
+padding: 1.3rem;
+font-weight: bold;
+    }
+
+.resetHang{
+    border: none;
+    font-family: 'Creepster', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    margin: 5px 2px 2px 2px;
+    letter-spacing: 1px;
+    outline: none;
+ background-color: white;
+ 
+
+    padding-top: 7px 7px 7px;
+
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    margin-top: 0;
+
+
+text-transform: uppercase;
+padding:1rem;
+justify-content: center;
+border-radius:100px ;
+
+
+color: #262626;
+
+border: 2px solid#262626;
+
+transition: all 0.5s;
+
+    
+}
+.modalHang{
+    font-family: 'Creepster', cursive;
+}
+.resetHang:hover{
+font-weight: bold;
+letter-spacing: 2Px;
+background-color: #F5672B;
+padding: 1.5rem;
+font-size: 1rem;
+}
+
+.Hangman.button{
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 30px;
+    margin: 5px 2px 2px 2px;
+    letter-spacing: 1px;
+    outline: none;
+    background: #00bcd4;
+  
+    box-shadow: 0 6px rosybrown;
+    padding-top: 4px;
+    
+
+}
+.alphabet{
+    display: flex;
+    width: 550px;
+    margin-top: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 9rem;
+}
+.rulesText{
+        font-family: 'squartiqa';
+      
+}
+.rulesHang{
+ margin-top: 2rem;
+ 
+    color: #F5A96A;
+    font-size: 0.5;
+} 
+
+.imageZombie2{
+
+height: 20vh;
+}
+.rula_button{
+    margin-top: 0.4rem;
+    border-radius: 10px; 
+    padding: 0.7rem;
+}
+
+.rula_button:hover{
+    background-color: #F5672B;
+   
+}
+
+.rul_button:hover{
+    background-color: #F5672B;
+}
+.lawGame{
+
+    display: flex;
+   font-size: 1.2rem;
+   justify-content: center;
+   align-items: center;
+   padding: 3px 3px 3px;
+   border-radius: 30rem;
+   font-family: 'Creepster', cursive;
+
+
+
+}
+.lawGame:hover{
+    background-color:#058796 ;
+    font-family: 'Creepster', cursive;
+}
+
+.hangman_button{
+   
+    font-family: 'Creepster', cursive;
+    font-size:2rem ;
+    margin: 0.3rem;
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    background-image: url(../../assets/images/pierretombale.png);
+ background-size: cover;
+ background-position: center;
+background-repeat: no-repeat;
+background-color: #022052;
+
+}
+
+.guessPendu{
+    letter-spacing: 1em;
+    margin: 0 -1em 0.2em 0;
+    font-size: 2rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;  
+}
+
+
+.guessPendu{
+    color: white;
+}
+
+.loseZombie{
+    font-family: 'Creepster', cursive;
+    margin-bottom: 3rem;
+
+letter-spacing: 2px;
+
+text-transform: uppercase;
+width: 100%;
+text-align: center;
+line-height: 0.79em;
+outline: none;
+
+
+position: relative;
+color: rgba(255,255,255,0.1);
+font-size:5vw ;
+
+}
+.answerWord{
+    font-family: 'Creepster', cursive;
+    font-weight: bold;
+}
+
+.wonZombie{
+    font-family: 'Creepster', cursive;
+
+margin-bottom: 3rem;
+
+letter-spacing: 2px;
+
+text-transform: uppercase;
+width: 100%;
+text-align: center;
+line-height: 0.79em;
+outline: none;
+
+
+position: relative;
+color: #F33418;
+font-size:5vw ;
+
+font-weight: bold;
+animation-name: textzoom;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+}
+@keyframes textzoom{
+    0%{
+        font-size: 10px;
+    }
+    100%
+    {
+       font-size:50px ; 
+    }
+}
+
+
+.imageZombie{
+    height:40vh;
+    margin: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+      
+}
+.showHint{
+    color:#F5672B;
+    font-family: 'roboto';
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+@media screen and (max-width:425px){
+
+    .alphabet{
+        display: flex;
+        width: 400px;
+        margin-top: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       margin-bottom: 9rem;
+    }
+
+}
+@media screen and (max-width:375px){
+
+    .alphabet{
+        display: flex;
+        width: 390px;
+        margin-top: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       margin-bottom: 9rem;
+    }
+
+}
+
+@media screen and (max-width:320px){
+
+    .alphabet{
+        display: flex;
+        width: 300px;
+        margin-top: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       margin-bottom: 9rem;
+    }
+
+}
+

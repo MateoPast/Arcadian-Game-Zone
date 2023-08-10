@@ -1,0 +1,152 @@
+@use './src/Styles/vars';
+.memory {
+  font-family: 'BackToTheFutur';
+  text-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+  .memory-header {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  .title_memory1 {
+    background: linear-gradient(to bottom, #ce4e09 0%, #ddd314 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //color: orange;
+    font-weight: 700;
+    font-size: 3rem;
+    display: block;
+    width: 25rem;
+  }
+  .title_memory2 {
+    display: block;
+    background: linear-gradient(to top, #ce4e09 0%, #ddd314 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //color: orange;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 30rem;
+  }
+  .memory-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .livesRules_container{
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 20rem;
+    }
+    .right-side_container{
+      width:20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 60vh;
+    }
+    .lives {
+      color: white;
+    }
+  }
+  .startNeGame_button{
+    font-family: 'BackToTheFutur';
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .cards_container_memory {
+    width: 65rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .rules{
+    font-family: "roboto";
+    margin-bottom: 4rem;
+  }  
+  .rules_button{
+    font-family: 'BackToTheFutur';
+    padding: 1rem;
+  }
+
+  .endGameModal_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'BackToTheFutur';
+    width: 100%;
+    .scores_table_title{
+      font-size: 2rem;
+    }
+    .won-lost_title_memory{
+      font-size: 2rem;
+      color: vars.$orange;
+      border: vars.$orange 1px solid;
+      border-radius: 0.5em;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .yourscore_title{
+      padding: 1rem;
+      font-size: 2rem;
+      color: vars.$dark-orange;
+      border: vars.$dark-orange 1px solid;
+      border-radius: 0.5em;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .scores_table_container {
+    border: vars.$orange 1px solid;
+    border-radius: 0.5em;
+    padding: 1rem;
+  }
+  
+}
+@media (max-width: 820px) {
+  .memory{
+    .memory-main{
+      flex-direction: column;
+      .livesRules_container {
+        height: 15rem;
+      }
+      .right-side_container {
+        height: 15rem;
+      }
+    }
+  }
+}
+@media (max-width: 500px) and (orientation: portrait) {
+  .memory-main{
+    .cards_container_memory {
+      width: 35rem;
+      .card_memory {
+        width: 4em;
+        height: 5em;
+        margin: 0.5rem;
+      }
+      }
+  }
+}
+@media (max-height: 400px) {
+  .memory-main{
+    .cards_container_memory {
+      width: 35rem;
+      .card_memory {
+        width: 4em;
+        height: 5em;
+        margin: 0.5rem;
+      }
+      }
+  }
+}

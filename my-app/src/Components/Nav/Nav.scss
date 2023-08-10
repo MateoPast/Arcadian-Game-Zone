@@ -1,0 +1,206 @@
+@use './src/Styles/vars';
+
+.header-game{
+//  padding: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-app{
+    height: vars.$header_height;
+    padding: 0;
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav.navbar{
+    justify-content: center;  
+}
+
+.navbar{
+    font-family: 'squartiqa';
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    min-height: 40px;
+    width: 100%;
+    background-color: vars.$dark-blue  ;
+    color: vars.$light-green-blue;
+    text-shadow:
+    -0.2rem 0.2rem 0.5rem vars.$light-green-blue;
+    border-bottom: solid;
+    border-bottom-color: orangered;
+}
+
+a.navbar_link{
+    padding:2rem;
+    transition: color 0.5s, background-color 0.5s;
+
+    &.active, &:hover {
+        color: vars.$orange;
+    }
+    &.active {
+        text-shadow: -0.2rem 0.2rem 0.5rem vars.$dark-orange;
+    }
+}
+
+a.navbar_signup,
+a.navbar_login,
+a.navbar_signout {
+    padding:1rem;
+    border-radius: 8px 8px 8px;
+   
+    color: inherit;
+
+    &:hover {
+        background-color: vars.$light-orange;
+        color:vars.$dark-blue;
+        text-shadow: none;
+    }
+}
+a.navbar_login{
+    margin: 1rem;
+    margin-left:2rem;
+}
+
+.navbar_links{
+    display: flex;
+
+    &:not(.show_profile) :is(.navbar_profile, .navbar_signout),
+    &.show_profile :is(.navbar_login, .navbar_signup) {
+        display: none;
+    }
+}
+
+.navbar_link{
+    padding: 0 0.3rem;
+    color: inherit; 
+} 
+
+
+
+
+.navbar_burger{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+
+
+
+@media screen and (max-width:926px) {
+
+    .navbar{
+        min-height: 30px;
+    }
+  
+    .navbar_links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        visibility: hidden;
+        background-color: vars.$dark-blue;
+    }
+    .show-nav .navbar_links{
+        width: 100vw;
+         right: 0;
+         visibility: visible;
+         position: relative;
+         z-index: 1;
+    }
+   
+    .navbar_link{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+    }
+
+    .navbar_signup{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+        margin: 5rem;
+    }
+    a.navbar_signup:hover{
+        color:vars.$dark-blue
+      }
+    .navbar_login{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+     
+    }
+    a.navbar_login:hover{
+        color:vars.$dark-blue
+    }
+    .navbar_burger{
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .navbar_burger:hover{
+        cursor: pointer;
+    }
+
+    .burger-bar,
+    .burger-bar::before,
+    .burger-bar::after{
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background: vars.$dark-orange;
+        transition: all .5s ease-in-out;
+    }
+
+    .burger-bar::before,
+    .burger-bar::after{
+        content:"";
+        position: absolute;
+        left:0;
+    }
+
+    .burger-bar::before{
+        transform: translateY(-12px);
+    }
+
+    .burger-bar::after{
+        transform: translateY(12px);
+    }
+    .show-nav .burger-bar{
+        width: 0;
+        background: transparent;
+    }
+
+    .show-nav .burger-bar::before{
+        transform: rotate(45deg);
+    }
+
+    .show-nav .burger-bar::after{
+        transform: rotate(-45deg);
+    }
+}

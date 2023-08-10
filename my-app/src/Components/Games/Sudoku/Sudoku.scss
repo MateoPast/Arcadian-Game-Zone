@@ -1,0 +1,122 @@
+.sudoku_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        text-align: center;
+    font-family: 'Harry P';
+    color: white;
+    font-size: 6rem;
+
+    .title_Sudoku {
+        color: red;
+        margin: 2rem 0 0 0;
+    }
+
+    .rules_Sudoku {
+        width: 50vw;
+        min-width: 50rem;
+        margin: 2rem 0;
+
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 2rem;
+        color: green;
+    }
+
+    .sudoku_elements_container {
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .controls_digits {
+            width: 10rem;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+
+            button {
+                appearance: none;
+                border: none;
+                background: none;
+                color: white;
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+
+        .controls_game {
+            width: 10rem;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+
+            button {
+                appearance: none;
+                border: none;
+                background: none;
+                color: white;
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .endGameModal_container {
+        h1, h2, th, button {
+            font-family: 'Harry P';
+        }
+
+        h1 {
+            font-size: 9rem;
+        }
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        & > * {
+            margin-block: 2rem;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 2rem;
+        }
+        table {
+            font-size: 3rem;
+        }
+        table th {
+            padding: 2rem;
+        }
+
+        button {
+            font-size: 3rem;
+            appearance: none;
+            border: 0;
+            padding: 1rem;
+            border-radius: 10px;
+            font-style: italic;
+            color: white;
+            background-color: forestgreen;
+        }
+    }
+}
+
+@media (max-width: 60rem) {
+    .sudoku_container {
+        .sudoku_elements_container {
+            flex-direction: column;
+            align-items: center;
+
+            .controls_digits {
+                flex-direction: row-reverse;
+            }
+            
+            .controls_game > * {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

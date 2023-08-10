@@ -1,0 +1,125 @@
+@use './src/Styles/vars';
+.game-container-snokia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+// .background-image {
+//     width: 100%;
+//     max-width: 400px;
+//     min-height: 400px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     order: 2;
+//     background-image: url(http://localhost:3000/static/media/snokia-blue.ff2bfdf….png);
+//     background-position: 200% 46%;
+//     background-size: cover;
+//     background-size: 99%;
+//     background-repeat: no-repeat;
+// }
+
+
+ .background-image-snokia{
+     width: 100%;
+    
+     max-width: 400px;
+     min-width: 400px;
+     min-height: 400px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     order: 2;
+     background-image: url(../../assets/images/snokia-blue.png);
+     background-position: 200% 46%;
+     background-size: cover;
+     background-size: 99%;
+     background-repeat: no-repeat;
+     //padding-bottom: 20%;
+ }
+
+.playAreaSnokia {
+    padding-top: 70px;
+    width: 80%;
+    height: 80%;
+    //margin-bottom: 20%;
+    max-width: 400px;
+    max-height: 275px;
+    
+}
+
+.gameOverSnokia {
+	
+    transform: translate(0, -350%);
+	color: white;
+	font-size: 35px;
+}
+
+.center {
+    text-align: center;
+    padding: 1rem;
+}
+
+.score {
+    color: vars.$orange;
+    font-weight: bold;
+}
+
+.modal-title {
+    padding: 1rem;
+}
+
+.scoreBoxSnokia {
+    text-align: center;
+    order: 1;
+    color: white;
+    margin-top: 2rem;
+}
+
+.rules-button {
+	order: 4;
+    margin: 3rem;
+}
+
+.playButtonSnokia {
+    border: solid 1px purple;
+    width: 25%;
+    transform: translate(0%, 50%);
+	border-radius: 15px;
+	color: vars.$orange;
+	background-color: vars.$blue;
+	font-weight: bold;
+    
+}
+
+.mobile-direction-snokia {
+    order: 3;
+    display: none;
+    text-align: center;
+}
+
+.mobile-direction-snokia button {
+    color: vars.$blue;
+    padding: 1rem;
+    background-color: vars.$orange;
+}
+
+#fruit {
+	display: none;
+}
+
+@media screen and (max-width:480px){
+
+    .playAreaSnokia{
+        max-width: 315px;
+    }
+
+    .mobile-direction-snokia {
+        display: block;
+    }
+
+}

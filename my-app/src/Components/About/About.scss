@@ -1,0 +1,115 @@
+.about_main_section {
+  margin-top: 3rem; 
+  margin-inline: 9.375rem; 
+  background-color:#022052; 
+  color: aliceblue; 
+  margin-bottom: 6rem;
+ }
+
+.about_main_title {
+  color:#F33418;
+  font-family: Squartiqa;
+  font-size: 2rem;
+  margin-bottom: 1rem
+  }
+
+.about_secondary_title {
+  text-align: center; 
+  color:#F33418; 
+  font-size: 1.7rem;
+  font-family: Squartiqa;
+}
+
+.dev_name {
+  font-weight: bold;
+  padding-top: 0.6rem;
+}
+
+.pic {
+  height: 20rem;
+  width: 20rem;
+}
+
+.dev_list {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.dev {
+  font-family: roboto;  
+  margin-inline: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+  
+.pic_name_and_bio {
+  background-color: #F0D6AB; 
+  color:black;
+  text-align: center;
+}
+
+.name_and_bio{ 
+  width: 20rem;
+  height: 10rem; 
+  font-size: 1.6rem; 
+}
+
+.bio {
+  margin-top: 1rem;
+  margin-inline: 0.9rem;
+}
+
+.about { 
+  margin-bottom: 3rem; 
+  text-align: justify; 
+  font-family: Roboto; 
+  font-size: 1.8rem;
+}
+
+
+@media only screen and (max-width: 400px) { 
+ .about_main_section {
+    margin-inline: 3rem;
+  }
+  
+  .dev_list { 
+    display: block;
+    margin-bottom: 6rem;
+  }
+
+  .pic {
+    height: 100%; 
+    width: 100%;
+  }
+
+  .name_and_bio {
+    width: 100%; 
+    height: 100%; 
+    font-size: 1rem;
+  }
+
+  .dev {
+    margin-block: 1rem;
+  }
+
+
+  .about_main_title {
+    font-size:1.2rem;
+  }
+  
+  .introduction {
+    font-size: 1.3rem;
+  }
+
+
+  .about_secondary_title {
+    font-size:1.4rem;
+      margin-top: -1rem;  
+  }
+
+  .bio {
+    padding-bottom: 1rem;
+    padding-inline: 0.5rem;
+  }
+}

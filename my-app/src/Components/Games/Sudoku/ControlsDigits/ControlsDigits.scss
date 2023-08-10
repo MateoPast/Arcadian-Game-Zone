@@ -1,0 +1,14 @@
+.controls_digits {
+    img {
+        width: 40px;
+    }
+    
+    button {
+        position: relative;
+
+        small {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

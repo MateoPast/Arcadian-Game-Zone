@@ -1,0 +1,32 @@
+@use './src/Styles/vars';
+
+.infos_container{
+    color: vars.$beige;
+    font-weight: 500;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    .avatarUser {
+        background-color: vars.$orange;
+        border: vars.$light-orange solid 0.20em;
+        border-radius: 1em;
+        padding: vars.$gutter / 2;
+        width: 6rem;
+        height: 6.4rem;
+    }
+    .infosText_container{
+        font-family: 'Roboto';
+        font-size: 2rem;
+        text-align: center;
+        .infosUser {
+            margin: 0.5rem;
+        }
+    }   
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .infos_container{
+        display: flex;
+        flex-direction: column;
+    } 
+}

@@ -1,0 +1,108 @@
+@use '../../Styles/vars';
+
+.sign_in { 
+  color: aliceblue;
+  display: flex; 
+  font-size: 3rem;
+  justify-content: center; 
+  margin-top: 11rem; 
+  margin-bottom: 6rem;
+  font-family: 'roboto';
+
+  aside {
+    h1 {
+      margin-top:10rem;
+      font-size: 3.8rem;
+      color: vars.$orange;
+      font-weight: bold;
+    }
+  }
+
+  form { 
+    margin-left: 7rem;
+    background-color: #0d2f64; 
+    padding: 2rem; 
+    font-size: 2.6rem; 
+    border-radius: 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+  
+    input {
+      margin-bottom: 1rem;
+      height: 4.2rem;
+      border-radius: 1rem;
+      border-color: vars.$dark-blue;
+    }
+
+    :is(button, .button) {
+      display: inline-block;
+      line-height: 4.4rem;
+      height: 4.4rem;
+      width: 33.22rem;
+    
+      text-align: center;
+    
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 1rem;
+    
+      border: 2px solid white;
+      color: black;
+    
+      &:is(button) {
+        background-color: #F5672B;
+      }
+      
+      &.button {
+        background: vars.$light-green-blue;
+      }
+    }
+    
+    p {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+  
+      &.error {
+        margin-bottom: 2rem;
+        max-width: 33.22rem;
+        text-align: center;
+      
+        font-style: italic;
+        font-size: 1.8rem;
+        color: red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .sign_in {
+    form {
+      input {
+        width: 260px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .sign_in {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+
+    aside {
+      text-align: center;
+      margin: 2rem 0;
+
+      h1 {
+        margin: 0;
+      }
+    }
+
+    form {
+      margin-inline: 1rem;
+    }
+  }
+}

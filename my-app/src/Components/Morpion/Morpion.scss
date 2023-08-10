@@ -1,0 +1,150 @@
+.grid_row {
+    justify-content: center;
+    margin-top: -0rem;
+    display: flex;
+}
+
+.reset {
+    margin-top: 2rem;
+    width:12rem; 
+    height: 3rem;
+    border-radius: 0.5rem; 
+    background-color: #F5A96A;
+    border-color: beige; 
+    font-weight: bold;
+}
+
+.morpion_scores_button {
+    margin-top: 2rem;
+    width:12rem; 
+    height: 3rem;
+    border-radius: 0.5rem; 
+    background-color: white;
+    border-color: beige; 
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.morpion_two_buttons {margin-inline: 2rem;}
+
+.game {
+    margin-top: 2rem; 
+}
+
+.board {
+    margin-top: 2rem;
+}
+
+.morpion_main_section { 
+    color:whitesmoke;
+    text-align: center;
+}
+
+.square {
+    height: 11.5rem;
+    width: 11.5rem;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    // background:#2e80b3;
+    border:solid; border-color: white;
+    color:yellow;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    font-style: italic;
+ }
+   
+ .status {
+    font-size:2.7rem; 
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.div_scores { display: flex; 
+    justify-content: center;
+    margin-bottom: 2rem;
+    .scores { 
+        font-size: 2rem;
+        padding-bottom: 1rem; 
+        font-family: fantasy; 
+        margin-inline: 1rem; 
+        padding: 1rem; 
+        background-color:whitesmoke; 
+        color: black;  
+        border-width: 5px 3px 3px 5px;
+        border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+        transform: rotate(2deg);
+        font-weight: bold;
+    }
+}
+
+.morpion_game_title {
+    color:#F0D6AB;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+.morpion_game_rule {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.image-oggy_morpion{
+    width: 7rem;
+}
+.image-cockroaches_morpion{
+    width: 7rem;
+    
+}
+.morpion_container{
+    display: flex;
+   justify-content: space-evenly;
+    align-items: flex-end;
+}
+.oggyAndCockroaches_img{
+    padding: 0 8rem;
+}
+// .rules-morpion_container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 80vh;
+//     margin: 0 5rem;
+// }
+
+
+@media screen and (max-width: 670px) {
+    .square {
+        height:10rem; 
+        width: 10rem;
+    } 
+
+    .image-oggy_morpion {
+
+        width: 5.3rem;
+    }
+
+    .image-cockroaches_morpion{
+        width: 5.3rem;  
+    }
+
+    .status {
+        font-size:2rem; 
+    }
+
+    .scores {
+         font-size: 1rem;
+    }
+
+    .morpion_game_rule {
+        margin-top: 1rem;
+        padding-inline: 1.3rem;  
+    }
+}

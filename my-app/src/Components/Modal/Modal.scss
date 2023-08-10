@@ -1,0 +1,48 @@
+@use './src/Styles/vars';
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0,0,0,0.4);
+  font-family: 'Roboto';
+  color: vars.$light-orange;
+  
+  overflow: auto;
+
+  &.openModal {
+    display: block;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+
+    width: 35%;
+    height: 60%;
+    min-width: 60rem;
+    min-height: 50rem;
+
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    background-color: vars.$dark-blue;
+  }
+}
+
+html:has(.openModal) {
+  overflow: hidden;
+}
